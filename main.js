@@ -18,6 +18,9 @@ phina.define('TitleScene', {
     HumanBody(mashiro_data).addChildTo(this).setPosition(this.gridX.center(), this.gridY.center()).setScale(0.3, 0.3);
     console.log("title");
   },
+  onpointend: function() {
+    this.exit();
+  },
 });
 
 phina.define('MainScene', {
